@@ -1,0 +1,79 @@
+.PositionGrid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: var(--small-space);
+  padding-right: var(--small-space);
+  padding-left: var(--small-space);
+}
+
+.PositionGrid thead,
+.PositionGrid tbody,
+.PositionGrid tr {
+  display: flex;
+  width: inherit;
+}
+
+.PositionGrid tbody {
+  flex-direction: column;
+}
+
+.PositionGrid th,
+.PositionGrid td {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+
+.PositionGrid-ticker {
+  width: 35px;
+  margin-right: var(--small-space);
+  margin-left: 8px;
+}
+
+.PositionGrid-name {
+  flex: 1;
+}
+
+.PositionGrid-exposure {
+  width: 60px;
+  justify-content: flex-end;
+  margin-left: var(--small-space);
+}
+
+.PositionGrid thead th {
+  font-size: 10px;
+  line-height: 28px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.PositionGrid tbody td {
+  height: 23px;
+  line-height: calc(23px - 2px);
+}
+
+.PositionGrid tbody tr {
+  border-top: 1px solid rgb(0 0 0 / 0.8);
+  border-bottom: 1px solid rgb(255 255 255 / 0.05);
+}
+
+.PositionGrid tbody .PositionGrid-ticker {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.PositionGrid tbody .PositionGrid-name {
+  color: #ffeacc;
+  opacity: 0.7;
+}
+
+.PositionGrid tbody .PositionGrid-exposure.positive {
+  color: #06deff;
+  opacity: 0.8;
+}
+
+.PositionGrid tbody .PositionGrid-exposure.negative {
+  color: #f2b032;
+  opacity: 0.8;
+}

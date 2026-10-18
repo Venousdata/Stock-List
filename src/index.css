@@ -1,0 +1,16 @@
+html,
+body {
+  --small-space: 12px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+#root {
+  width: 336px;
+}
